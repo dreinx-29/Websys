@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added to Wishlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #128876, #b9c6dd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .wishlist-container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 350px;
+        }
+
+        .wishlist-icon {
+            font-size: 50px;
+            color: #e83e8c;
+        }
+
+        .wishlist-item {
+            margin-bottom: 15px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .button {
+            padding: 12px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="wishlist-container">
+        <div class="wishlist-item">
+            <div class="wishlist-icon">💖</div>
+            <h2>Item Added to Wishlist</h2>
+        </div>
+        <div class="button-container">
+            <a href="wishlist.html" class="button">View Wishlist</a>
+            <a href="product.html" class="button">Continue Browsing</a>
+        </div>
+    </div>
+</body>
+</html>

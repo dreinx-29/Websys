@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GALLERY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #128876, #b9c6dd);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    a.back-button {
+      position: absolute;
+      top: 50px;
+      right: 40px;
+      width: 100px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #308cb3;
+      text-align: center;
+      line-height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: block;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    a.back-button:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      color: #3e96b4;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin: 30px 0;
+      font-size: 50px;
+    }
+
+    .carousel-container {
+      overflow: hidden;
+      width: 90%;
+      max-width: 1200px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      background: none;
+      padding: 20px;
+    }
+
+    .carousel-track {
+      display: flex;
+      animation: scroll 25s linear infinite;
+    }
+
+    .carousel-track img {
+      width: 500px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 30px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-track img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .carousel-track {
+      width: calc((500px + 30px) * 12); /* Adjusted to match image size */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed back button -->
+  <a href="HOME.html" class="back-button">X</a>
+
+  <h1>Gallery</h1>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- Original images -->
+      <img src="tasty-bread.jpg" alt="Photo 1">
+      <img src="chewy-candy.jpg" alt="Photo 2">
+      <img src="o-puff-candy.jpg" alt="Photo 3">
+      <img src="magic-chew-candy.jpg" alt="Photo 4">
+      <img src="cola-candy.jpg" alt="Photo 5">
+      <img src="candy_product_cacttegory.jpg" alt="Photo 6">
+
+      <!-- Duplicated images for smooth scroll loop -->
+      <img src="tasty-bread.jpg" alt="Photo 1">
+      <img src="chewy-candy.jpg" alt="Photo 2">
+      <img src="o-puff-candy.jpg" alt="Photo 3">
+      <img src="magic-chew-candy.jpg" alt="Photo 4">
+      <img src="cola-candy.jpg" alt="Photo 5">
+      <img src="candy_product_cacttegory.jpg" alt="Photo 6">
+    </div>
+  </div>
+
+</body>
+</html>
