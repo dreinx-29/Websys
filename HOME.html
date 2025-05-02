@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>5A's General Merchandise</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2ca39a;
+      padding: 15px 30px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #5ee6ec;
+      padding: 50px 30px;
+      flex-wrap: wrap;
+    }
+
+    .description-content {
+      max-width: 500px;
+    }
+
+    .description-content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .description-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .shop-button {
+      background-color: #2ca39a;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .hero-image {
+      width: 400px;
+      max-width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .carousel {
+      display: flex;
+      width: 1600px;
+      animation: slide 16s infinite linear;
+    }
+
+    .carousel img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-400px); }
+      50% { transform: translateX(-800px); }
+      75% { transform: translateX(-1200px); }
+      100% { transform: translateX(0); }
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 30px;
+    }
+
+    .category-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .category-card:hover {
+      transform: scale(1.05);
+    }
+
+    .category-card a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .category-card p {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .footer {
+      background-color: #2ca39a;
+      color: white;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      text-align: left;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+      min-width: 250px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .description {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .carousel {
+        width: 1200px; 
+      }
+
+      .footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .footer-section {
+        text-align: center;
+      }
+
+      .social-links a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="5A's logo.jpg" alt="5A's Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="PRODUCT.html">Products</a></li>
+      <li><a href="GALLERY.html">Gallery</a></li>
+      <li><a href="ABOUT.html">About Us</a></li>
+      <li><a href="LOGINPAGE.html">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <header class="description">
+    <div class="description-content">
+      <h1>Welcome to 5A's General Merchandise</h1>
+      <p>Your go-to store for sweets, snacks, and more!</p>
+      <a href="PRODUCT.html" class="shop-button">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <div class="carousel">
+        <img src="baner.jpeg" alt="banner">
+        <img src="candy_product_cacttegory.jpg" alt="bn2">
+        <img src="pandecoco.jpg" alt="bn3">
+        <img src="candy_product_cacttegory.jpg" alt="bn3">
+      </div>
+    </div>
+  </header>
+
+  <section class="categories">
+    <div class="category-card">
+      <a href="toys-category.html">
+        <img src="random-toy.jpg" alt="Toys">
+        <p>Toys</p>
+      </a>
+    </div>
+
+    <div class="category-card">
+      <a href="juice-category.html">
+        <img src="master coco.jpg" alt="Drinks">
+        <p>Juice</p>
+      </a>
+    </div>
+
+    <div class="category-card">
+      <a href="#">
+        <img src="sweetcorn.jpg" alt="Chips">
+        <p>Chips</p>
+      </a>
+    </div>
+    <div class="category-card">
+      <a href="#">
+        <img src="pandecoco.jpg" alt="Bread">
+        <p>Bread</p>
+      </a>
+    </div>
+    <div class="category-card">
+      <a href="#">
+        <img src="dewberry.jpg" alt="Snacks">
+        <p>Snacks</p>
+      </a>
+    </div>
+    
+    <div class="category-card">
+      <a href="#">
+        <img src="gummy-wheel-candy.jpg" alt="Gummies">
+        <p>Gummies</p>
+      </a>
+    </div>
+    <div class="category-card">
+      <a href="#">
+        <img src="candy_product_cacttegory.jpg" alt="Candies">
+        <p>Candies</p>
+      </a>
+    </div>
+    
+  </section>
+
+  <div class="footer">
+    <div class="footer-section contact-info">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:5a's_genmerch@gmail.com">5a's_genmerch@gmail.com</a></p>
+      <p>Contact No: 091234456777</p>
+      <p>Address: 
+        <a href="https://www.google.com/maps/place/4QX9%2BMHJ+Arayat+Public+Market,+gen+espino+st+cor+gen,+General+Alejandrino+St,+Arayat,+Pampanga/" target="_blank">
+          General Alejandrino Street, Arayat, Pampanga, Philippines
+        </a>
+      </p>
+    </div>
+    
+    <div class="footer-section social-media">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
